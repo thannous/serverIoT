@@ -9,7 +9,8 @@ var Schema      = mongoose.Schema;
 
 var BabySchema  = new Schema({
     name :          { type : String},
-    temp :          { type : String}
+    temp :          { type : Number},
+    sensor:         { type : Number}
 });
 
 

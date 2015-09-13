@@ -50,7 +50,7 @@ describe('Init', function() {
             /*  -----------------------  */
             it ('POST baby1', function(done){
                 api.post('/baby').
-                    send({ name: 'Nicolas', temp: '38'}).
+                    send({ sensor: '1',name: 'Nicolas', temp: '38'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
@@ -61,7 +61,7 @@ describe('Init', function() {
             });
             it ('POST baby2', function(done){
                 api.post('/baby').
-                    send({ name: 'Francois', temp: '38'}).
+                    send({ sensor: '2', name: 'Francois', temp: '38'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
@@ -72,7 +72,7 @@ describe('Init', function() {
             });
             it ('POST baby3', function(done){
                 api.post('/baby').
-                    send({ name: 'Thanh', temp: '37.2'}).
+                    send({ sensor: '3', name: 'Thanh', temp: '37.2'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
@@ -83,7 +83,7 @@ describe('Init', function() {
             });
             it ('POST baby4', function(done){
                 api.post('/baby').
-                    send({ name: 'Emmanuelle', temp: '39'}).
+                    send({ sensor: '4', name: 'Emmanuelle', temp: '39'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
@@ -94,7 +94,7 @@ describe('Init', function() {
             });
             it ('POST baby5', function(done){
                 api.post('/baby').
-                    send({ name: 'Lenaic', temp: '37'}).
+                    send({ sensor: '5', name: 'Lenaic', temp: '37'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
@@ -105,7 +105,7 @@ describe('Init', function() {
             });
             it ('POST baby6', function(done){
                 api.post('/baby').
-                    send({ name: 'Pierre', temp: '37'}).
+                    send({ sensor: '6', name: 'Pierre', temp: '37'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
@@ -116,7 +116,7 @@ describe('Init', function() {
             });
             it ('POST baby7', function(done){
                 api.post('/baby').
-                    send({ name: 'Titi', temp: '37.5'}).
+                    send({ sensor: '7', name: 'Titi', temp: '37.5'}).
                     expect(201).
                     end(function(err, res){
                         if (err) return done(err);
