@@ -13,7 +13,7 @@ module.exports = function (req, res, next) {
     res.on('finish', function () {
         myLed.write(1);
         setTimeout(function(){
-            myLed.write(1);
+            myLed.write(0);
         }, 2000);
 
         var duration = +new Date() - starTime;
