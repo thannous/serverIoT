@@ -11,9 +11,9 @@ module.exports = function (req, res, next) {
     myLed.dir(mraa.DIR_OUT);
 
     res.on('finish', function () {
-        myLed.write(1);
+        myLed.write(0);
         setTimeout(function(){
-            myLed.write(0);
+            myLed.write(1);
         }, 2000);
 
         var duration = +new Date() - starTime;
