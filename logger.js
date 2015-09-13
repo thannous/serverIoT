@@ -12,10 +12,10 @@ module.exports = function (req, res, next) {
 
     res.on('finish', function () {
         myLed.write(0);
-        console.log("je commence")
+        stream.write("je commence")
         setTimeout(function(){
             myLed.write(1);
-            console.log("je suis")
+            stream.write("je suis")
         }, 2000);
 
         var duration = +new Date() - starTime;
