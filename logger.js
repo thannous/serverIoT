@@ -11,10 +11,10 @@ module.exports = function (req, res, next) {
     myLed.dir(mraa.DIR_OUT);
 
     res.on('finish', function () {
-        myLed.write(0);
+        myLed.write(1);
         stream.write("je commence")
         setTimeout(function(){
-            myLed.write(1);
+            myLed.write(0);
             stream.write("je suis")
         }, 2000);
 
